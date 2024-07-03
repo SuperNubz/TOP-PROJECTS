@@ -1,0 +1,96 @@
+*{
+    margin:0px;
+}
+
+.headerContainer{
+    background-color: #1F2937;
+}
+
+.header{
+    display: flex;
+    border: 5px solid red;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.headerLogoSection{
+    border:5px solid yellow;
+    width:300px;
+}
+
+.header > .headerLinkSection{
+    display:flex;
+    border: 5px solid green;
+    width:300px;
+    
+}
+
+.headerLinkSection > div{
+    flex: 1 1 auto;
+    border: 3px solid white;
+    margin-left: 10px;
+}
+
+.headerLinkSection > div > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.headerLinkContent{
+    color:white;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color:red;
+}
+
+a:hover{
+    color:  red;
+    text-decoration: none;
+}
+
+a:active{
+    color: white;
+}
+
+.sect1container{
+    background-color: #1F2937;
+}
+
+.sect1{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+
+.sect1 > .sect1content{
+    border:3px solid yellow;
+}
+
+.sect1 > .sect1photo{
+    flex: 0 0 30%;
+    border:5px solid green;
+    margin:0;
+    padding:0; 
+    /* width: 50%;
+    height: 50%; */
+}
+
+.sect1 > .sect1photo > img{
+    /* display: block; */
+    object-fit: cover;
+    border:3px solid red;
+
+    max-width: 100%;
+    height: auto;
+    /* width: 30%;
+    height: auto; */
+}
+
+
+
