@@ -1,5 +1,6 @@
 *{
     margin:0px;
+    font-family:"Roboto";
 }
 
 .headerContainer{
@@ -8,27 +9,30 @@
 
 .header{
     display: flex;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     justify-content: space-evenly;
     color:white;
+    padding: 10px;
 }
 
 .headerLogoSection{
-    border:5px solid yellow;
+    /* border:5px solid yellow; */
     width:300px;
 }
 
 .header > .headerLinkSection{
     display:flex;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     width:300px;
+    align-items: center;
     
 }
 
 .headerLinkSection > div{
     flex: 1 1 auto;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     margin-left: 10px;
+    text-align: center;
 }
 
 .headerLinkSection > div > a:hover{
@@ -38,59 +42,140 @@
 
 .headerLinkContent{
     color:white;
-}
-
-a:link{
-    color: red;
-}
-
-a:visited{
-    color:red;
-}
-
-a:hover{
-    color:  red;
     text-decoration: none;
 }
 
-a:active{
+.headerLinkSection > div > a:link{
     color: white;
+    text-decoration: none;
+}
+
+.headerLinkSection > div > a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+.headerLinkSection > div > a:active{
+    color: white;
+    text-decoration: none;
 }
 
 .sect1container{
     background-color: #1F2937;
+    padding-bottom: 50px;
+    padding-top: 10px;
 }
 
 .sect1{
     display: flex;
     justify-content: center;
-    gap:20px;
+    /* gap:20px; */
 }
 
 
 .sect1 > .sect1content{
-    border:3px solid yellow;
+    /* border:3px solid yellow; */
+    padding: 2%;
+}
+
+.sect1 > .sect1content > h1{
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.sect1 > .sect1content > p{
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 .sect1 > .sect1photo{
-    flex: 0 0 30%;
-    border:5px solid green;
+    flex: 0 0 20%;
+    /* border:5px solid green; */
     margin:0;
     padding:0; 
-    /* width: 50%;
-    height: 50%; */
+    align-content: center;
 }
 
 .sect1 > .sect1photo > img{
-    /* display: block; */
-    object-fit: cover;
-    border:3px solid red;
+    /* object-fit: cover; */
+    /* border:3px solid red; */
 
     max-width: 100%;
     height: auto;
-    /* width: 30%;
-    height: auto; */
+}
+
+.sect2container{
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.sect2{
+    
+}
+
+.sect2 > .sect2text > h1{
+    text-align: center;
 }
 
 
+
+.sect2 > .sect2projectsimgcontainer{
+    /* border: 5px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.sect2 > .sect2text{
+    font-size: 36px;
+    padding: 20px 0 20px 0;
+}
+
+.sect2 > .sect2projectsimgcontainer > .proj{
+    flex: 0 0 20%;
+    /* border: 5px solid red; */
+    align-content: center;
+    max-width: 150px;
+    max-height: 200px;
+    min-width: 150px;
+    min-height: 200px;
+    text-align: center;
+
+}
+
+.sect2 > .sect2projectsimgcontainer > .proj > img{
+    min-width: 150px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sect3container{
+    padding: 50px;
+    background-color: #E5E7EB;
+}
+
+.sect3{
+    /* border: 1px solid red; */
+    align-content: center;
+}
+
+.sect3 > h1{
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.sect3 > h6{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+}
 
