@@ -1,10 +1,9 @@
-// console.log("Rock Paper Scisscors");
+console.log("Rock Paper Scisscors");
 
-// const buttons = document.querySelectorAll("button");
-// let humanChoiceBtn;
-// let humanScore = 0;
-// let computerScore = 0;
-
+const buttons = document.querySelectorAll("button");
+let humanChoiceBtn;
+let humanScore = 0;
+let computerScore = 0;
 
 
 function getComputerChoice(){
@@ -67,36 +66,33 @@ function playRound(humanChoice, computerChoice){
 }
 
 function playGame(){
-    let humanChoiceBtn;
-    let humanScore = 0;
-    let computerScore = 0;
-  
-//   let humanChoice = humanChoiceBtn;
-    let humanChoice = getHumanChoice();
+  console.log("PlayGameFunc");
+  let humanChoice = humanChoiceBtn;
+  // let humanChoice = getHumanChoice();
   let computerChoice = getComputerChoice();
   
   let winner = playRound(humanChoice, computerChoice);
   
   if(winner === "computer"){
-    computerScore++
+    computerScore++;
   } else if(winner === "human"){
-    humanScore++
+    humanScore++;
   }
   
   console.log("Computer Score:    " + computerScore);
   console.log("Human Score:   " + humanScore);
 }
 
-playGame();
+// playGame();
 
-// buttons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     humanChoiceBtn = button.id;
-//     console.log("Human: " + humanChoiceBtn);
-//     playGame();
-//   })
-// });
-
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // alert("HELLO!");
+    humanChoiceBtn = button.id;
+    console.log("Human: " + humanChoiceBtn);
+    playGame();
+  })
+});
 
 
 
